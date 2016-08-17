@@ -1,8 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\MoveOffset.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\gameTheme.cs">
     <Files>
-      <File FileName="Assets\scripts\MoveOffset.cs" Line="7" Column="30" />
+      <File FileName="Assets\scripts\MoveOffset.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\gameTheme.cs" Line="27" Column="3" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
