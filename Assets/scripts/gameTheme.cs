@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class gameTheme : MonoBehaviour {
 
@@ -20,7 +21,7 @@ public class gameTheme : MonoBehaviour {
 		themeNameText.text = themeNames [themeId];
 
 		themeInfo.SetActive (false);
-		themeInfoText.text = "";
+		themeInfoText.text = "Você acertou X de X questões.";
 		foreach (GameObject estrela in estrelas) {
 			estrela.SetActive (false);
 		}
@@ -31,5 +32,22 @@ public class gameTheme : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		playButton.interactable = themeId != 0;
+	}
+
+	public void themeSelect(int _themeId)
+	{
+		themeId = _themeId;
+		themeNameText.text = themeNames [themeId];
+		themeInfo.SetActive (true);
+		playButton.interactable = true;
+
+		int finalScore = 0;
+		int corrects = 0;
+		themeInfoText.text = "Você acertou " + corrects.ToString() + " de 20 questões.";
+	}
+
+	public void play()
+	{
+		SceneManager.LoadScene ("T" + themeId.ToString ());
 	}
 }

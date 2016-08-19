@@ -48,6 +48,8 @@
      <Compile Include="Assets\scripts\BasicCommands.cs" />
      <Compile Include="Assets\scripts\MoveOffset.cs" />
      <Compile Include="Assets\scripts\gameTheme.cs" />
+     <Compile Include="Assets\scripts\responder.cs" />
+     <Compile Include="Assets\scripts\themeInfo.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
